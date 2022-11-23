@@ -1,0 +1,23 @@
+TextWidget:
+
+<TextWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Label:
+            id: label1
+            font_size: 68
+            text: root.text
+
+        Button:
+            id: button1
+            text: "手動注水"
+            font_size: 68
+            on_press: root.buttonClicked1()
+
+        Button:
+            id: button2
+            text: "自動注水"
+            font_size: 68
+            on_press: root.buttonClicked2()
